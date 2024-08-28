@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan's API Task</title>
+    <link rel="stylesheet" href="libs/css/styles.css">
+
+</head>
+
+<body>
+
+    <h1>API Task</h1>
+
+    <table>
+        <thead>
+            <tr>
+              <th>API Name</th>
+              <th>API Description</th>
+              <th></th>           
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Addresses</td>
+              <td>This app will return a list of streets starting with your search entry <br><br>
+                 Search street name:
+                <input type="text" id="stName"></td>
+              <td>
+                <button id="adressSubmit">Submit</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Country Codes</td>
+              <td>This app will return the country code for any given latitude/longitude <br><br>
+                  Latitude: <input type="text" id="lat"><br>
+                  Longitude: <input type="text" id="long"><br>
+              </td>
+              <td>
+                <button id="couCodeSubmit">Submit</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Time Zones</td>
+              <td>This app will return the timezone at the given lat/lng as well as current time <br><br>
+                  Latitude: <input type="text" id="tzLat"><br>
+                  Longitude: <input type="text" id="tzLong"><br>
+              </td>
+              <td>
+                <button id="tzSbmt">Submit</button>
+            </td>
+            </tr>
+
+          <tbody>  
+
+    </table>
+
+    <h1>Results</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Address Results</th>
+                <th>Country Code Results</th>
+                <th>Timezone Results</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td>
+                 <p>
+                   Street Name: <span id="strName"></span><br>
+                    Country: <span id="couCode"></span><br>
+                    Locality: <span id="locality"></span><br>
+                    Postal Code: <span id="pstCode"></span> 
+                </p>
+              </td>
+              <td>
+                <p>
+                    Country Name: <span id="countName"></span><br>
+                    Country Code: <span id="countCode"></span><br>
+                    Distance: <span id="dist"></span><br>
+                    Languages: <span id="lang"></span>    
+                </p>     
+                
+              </td>
+              <td>
+                <p>
+                    Country Name: <span id="tzCount"></span><br>
+                    Timezone ID: <span id="tzID"></span><br>
+                    GMT Offset: <span id="gmtOff"></span><br>
+                    Raw Offset: <span id="rawOff"></span><br>
+                    Current Time: <span id="time"></span>
+                </p>
+              </td>
+            </tr>
+        </tbody>
+    </table>
+
+   
+    
+
+
+
+
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+	<script type="application/javascript" src="libs/js/script.js"></script>
+    
+    
+</body>
+</html>
